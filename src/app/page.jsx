@@ -1,39 +1,38 @@
 'use client'
+import Banner from '@/components/Banner'
+import CutsToday from '@/components/CutsToday'
 import { Header } from '@/components/Header'
-import { Card, Divider, Metric, Text } from '@tremor/react'
+import { getTodayCuts } from '@/utils/utils'
+
+import { useEffect, useState } from 'react'
 export default function Home() {
+  const [cuts, setCuts] = useState([])
+
+  useEffect(() => {
+    const fetchData = () => {
+      fetch('/api/interruptions')
+        .then(res => res.json())
+        .then(data => {
+          if (!data.error) {
+            setCuts(data.data.map(el => ({
+              ...el,
+              date: new Date(el.date)
+            })))
+          }
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    }
+
+    fetchData()
+  }, [])
+
   return (
     <main className='max-w-7xl min-h-screen mx-auto '>
       <Header />
-      <section className='p-8 flex w-full items-center justify-evenly flex-col sm:flex-row'>
-        <img src='/alert_ils.svg' alt='ilustracion persona con un celular y un mensaje de alerta' className='w-1/2 max-w-lg' />
-        <div className='max-w-md text-center gap-8 flex flex-col'>
-          <Metric>
-            Cortes de agua en Bogotá
-          </Metric>
-          <Card>
-            <ul className='text-justify'>
-              <li>
-                <Text>
-                  Obtén alertas inmediatas sobre cortes de agua en tu zona.
-                </Text>
-                <Divider />
-              </li>
-              <li>
-                <Text>
-                  Mantente al tanto de los cortes programados, emergencias y reparaciones, asegurando que nunca te sorprendas con la falta de agua.
-                </Text>
-                <Divider />
-              </li>
-              <li>
-                <Text>
-                  Nuestra plataforma te brinda la tranquilidad de estar informado en todo momento.
-                </Text>
-              </li>
-            </ul>
-          </Card>
-        </div>
-      </section>
+      <Banner />
+      <CutsToday cuts={getTodayCuts(cuts)} ></CutsToday>
     </main>
   )
 }
