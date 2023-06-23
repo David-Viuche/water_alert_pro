@@ -1,5 +1,6 @@
 'use client'
 import Banner from '@/components/Banner'
+import CutsFiltered from '@/components/CutsFiltered'
 import CutsToday from '@/components/CutsToday'
 import { Header } from '@/components/Header'
 import { getTodayCuts } from '@/utils/utils'
@@ -32,7 +33,8 @@ export default function Home() {
     <main className='max-w-7xl min-h-screen mx-auto '>
       <Header />
       <Banner />
-      <CutsToday cuts={getTodayCuts(cuts)} ></CutsToday>
+      <CutsToday cuts={getTodayCuts(cuts)} />
+      <CutsFiltered cuts={(cuts)} />
     </main>
   )
 }

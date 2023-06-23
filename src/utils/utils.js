@@ -30,11 +30,28 @@ export const sortCuts = (data) => {
 
 export const getTodayDate = () => {
   const date = new Date()
+  return formatDate(date)
+}
 
+export const formatDate = (date) => {
   const day = String(date.getDate()).padStart(2, '0')
   const month = String(date.getMonth() + 1).padStart(2, '0')
   const year = date.getFullYear()
 
   const formattedDate = `${day}/${month}/${year}`
   return formattedDate
+}
+
+export const getFirstAndLastDates = (array) => {
+  if (array.length === 0) {
+    return null
+  }
+
+  const dates = array.map(obj => obj.date)
+  const sortedDates = dates.sort((a, b) => a - b)
+
+  const firstDate = formatDate(new Date(sortedDates[0]))
+  const lastDate = formatDate(new Date(sortedDates[sortedDates.length - 1]))
+
+  return { firstDate, lastDate }
 }
