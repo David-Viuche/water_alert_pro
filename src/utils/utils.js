@@ -55,3 +55,21 @@ export const getFirstAndLastDates = (array) => {
 
   return { firstDate, lastDate }
 }
+
+export const filterArrayByKey = (array, key, value) => {
+  return array.filter(item => item[key] === value)
+}
+
+export const getUniqueKey = (array, key) => {
+  const uniqueKey = new Set()
+
+  array.forEach(item => {
+    let element = item[key]
+    if (key === 'date') {
+      element = new Date(element).setHours(0, 0, 0, 0)
+    }
+    uniqueKey.add(element)
+  })
+
+  return Array.from(uniqueKey)
+}
