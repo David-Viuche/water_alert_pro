@@ -4,26 +4,30 @@ import CutsFiltered from '@/components/CutsFiltered'
 import CutsToday from '@/components/CutsToday'
 import { Header } from '@/components/Header'
 import { getTodayCuts } from '@/utils/utils'
+import { Text } from '@tremor/react'
 
 import { useEffect, useState } from 'react'
+
 export default function Home() {
   const [cuts, setCuts] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    const fetchData = () => {
-      fetch('/api/interruptions')
-        .then(res => res.json())
-        .then(data => {
-          if (!data.error) {
-            setCuts(data.data.map(el => ({
-              ...el,
-              date: new Date(el.date)
-            })))
-          }
-        })
-        .catch(err => {
-          console.log(err)
-        })
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/api/interruptions')
+        const data = await response.json()
+        if (!data.error) {
+          setCuts(data.data.map(el => ({
+            ...el,
+            date: new Date(el.date)
+          })))
+        }
+      } catch (error) {
+        console.log(error)
+      } finally {
+        setIsLoading(false)
+      }
     }
 
     fetchData()
@@ -33,8 +37,19 @@ export default function Home() {
     <main className='max-w-7xl min-h-screen mx-auto '>
       <Header />
       <Banner />
-      <CutsToday cuts={getTodayCuts(cuts)} />
-      <CutsFiltered cuts={(cuts)} />
+      {isLoading && (
+        <section className='p-8 flex w-full items-center justify-evenly flex-col gap-8'>
+          <Text>Cargando datos...</Text>
+        </section>
+      )
+      }
+      {
+        !isLoading && (
+          <>
+            <CutsToday cuts={getTodayCuts(cuts)} />
+            <CutsFiltered cuts={cuts} />
+          </>
+        )}
     </main>
   )
 }
