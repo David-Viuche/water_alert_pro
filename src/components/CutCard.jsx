@@ -1,3 +1,4 @@
+import { formatDate } from '@/utils/utils'
 import { Badge, Card, Divider, Metric, Tab, TabGroup, TabList, TabPanel, TabPanels, Text } from '@tremor/react'
 
 const CutCard = ({ cut }) => {
@@ -8,11 +9,17 @@ const CutCard = ({ cut }) => {
           <Metric>
             {cut.location}
           </Metric>
-          <Text className='min-w-fit'>
-            {`${cut.start} - ${cut.duration}`}
-          </Text>
+          <div className='text-center'>
+            <Text>
+              {`${formatDate(cut.date)}`}
+            </Text>
+            <Text className='min-w-fit'>
+              {`${cut.start} - ${cut.duration}`}
+            </Text>
+          </div>
         </div>
         <Badge size='sm' className='h-fit my-4'>{cut.jobType}</Badge>
+
       </div>
       <TabGroup>
         <TabList>
