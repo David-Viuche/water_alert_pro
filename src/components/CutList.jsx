@@ -1,9 +1,9 @@
 import { Divider, Grid, Text } from '@tremor/react'
 import CutCard from './CutCard'
 
-const CutList = ({ children, nodata, cuts }) => {
+const CutList = ({ children, nodata, cuts, className }) => {
   return (
-    <section className='p-8 flex w-full items-center justify-evenly flex-col gap-8'>
+    <section className={`p-8 flex w-full items-center justify-evenly flex-col gap-8 ${className}`}>
       <Divider></Divider>
       {children}
       {

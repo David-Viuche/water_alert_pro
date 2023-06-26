@@ -3,7 +3,7 @@ import { Badge, Card, Divider, Metric, Tab, TabGroup, TabList, TabPanel, TabPane
 
 const CutCard = ({ cut }) => {
   return (
-    <Card>
+    <Card className='h-fit'>
       <div >
         <div className='flex justify-between flex-col sm:flex-row'>
           <Metric>

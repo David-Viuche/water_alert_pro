@@ -30,7 +30,7 @@ const CutsFiltered = ({ cuts }) => {
   }, [cuts, selectedValue])
 
   return (
-    <CutList cuts={cutsFiltered} nodata={`No hay cortes de agua programados entre ${getDates?.firstDate} - ${getDates?.lastDate}`} >
+    <CutList cuts={cutsFiltered} nodata={`No hay cortes de agua programados entre ${getDates?.firstDate} - ${getDates?.lastDate}`} className='min-h-screen'>
       <Metric className='text-center'>
         {`Últimos cortes de agua publicados en Bogotá entre ${getDates?.firstDate} - ${getDates?.lastDate}`}
       </Metric>
