@@ -1,46 +1,45 @@
-import { Button, Card, Metric, Select, SelectItem, Title } from '@tremor/react'
+import { Card, Metric } from '@tremor/react'
 import CutList from './CutList'
-import { filterArrayByKey, getFirstAndLastDates, getUniqueKey } from '@/utils/utils'
-import { useState } from 'react'
+import { filterArrayByKey, getFirstAndLastDates } from '@/utils/utils'
+import { useEffect, useState } from 'react'
+import Filter from './Filter'
 
 const CutsFiltered = ({ cuts }) => {
   const getDates = getFirstAndLastDates(cuts)
   const [cutsFiltered, setCutsFiltered] = useState(cuts)
-  const [selectedValue, setSelectedValue] = useState(null)
+  const [selectedValue, setSelectedValue] = useState({})
 
   const filterHandle = (val, key) => {
-    setCutsFiltered(filterArrayByKey(cuts, key, val))
-    setSelectedValue(val)
+    setSelectedValue(sel => ({ ...sel, [key]: val }))
   }
 
-  const deleteFilters = () => {
-    setCutsFiltered(cuts)
-    setSelectedValue(null)
+  const deleteFilters = (key) => {
+    if (key) {
+      setSelectedValue(sel => {
+        const newSelectedValue = { ...sel }
+        delete newSelectedValue[key]
+        return newSelectedValue
+      })
+    } else {
+      setSelectedValue({})
+    }
   }
+
+  useEffect(() => {
+    setCutsFiltered(filterArrayByKey(cuts, selectedValue))
+  }, [cuts, selectedValue])
 
   return (
-    <CutList cuts={cutsFiltered} nodata={`No hay cortes de agua programados entre ${getDates?.firstDate} - ${getDates?.lastDate}`} >
+    <CutList cuts={cutsFiltered} nodata={`No hay cortes de agua programados entre ${getDates?.firstDate} - ${getDates?.lastDate}`} className='min-h-screen'>
       <Metric className='text-center'>
-        {`Cortes de agua en Bogotá entre ${getDates?.firstDate} - ${getDates?.lastDate}`}
+        {`Últimos cortes de agua publicados en Bogotá entre ${getDates?.firstDate} - ${getDates?.lastDate}`}
       </Metric>
-      <Card>
-        <div className='flex items-center justify-between mb-4'>
-          <Title>
-            Filtrar por localidad
-          </Title>
-          <Button size='xs' onClick={deleteFilters}>Borrar</Button>
-        </div>
-        <Select value={selectedValue} onChange={(val) => filterHandle(val, 'location')}>
-
-          {
-            getUniqueKey(cuts, 'location').map((key) => (
-              <SelectItem key={key} value={key}>{key}</SelectItem>
-            ))
-          }
-
-        </Select>
+      <Card className='flex flex-col sm:flex-row'>
+        <Filter title='Filtrar por localidad' keyFilter='location' selectedValue={selectedValue} cuts={cuts} filterHandle={filterHandle} deleteFilters={deleteFilters} />
+        <Filter title='Filtrar por tipo trabajo' keyFilter='jobType' selectedValue={selectedValue} cuts={cuts} filterHandle={filterHandle} deleteFilters={deleteFilters} />
+        <Filter title='Filtrar por día' keyFilter='date' selectedValue={selectedValue} cuts={cuts} filterHandle={filterHandle} deleteFilters={deleteFilters} />
       </Card>
-    </CutList>
+    </CutList >
   )
 }
 

@@ -3,7 +3,7 @@ import { Badge, Card, Divider, Metric, Tab, TabGroup, TabList, TabPanel, TabPane
 
 const CutCard = ({ cut }) => {
   return (
-    <Card>
+    <Card className='h-fit'>
       <div >
         <div className='flex justify-between flex-col sm:flex-row'>
           <Metric>
@@ -14,11 +14,11 @@ const CutCard = ({ cut }) => {
               {`${formatDate(cut.date)}`}
             </Text>
             <Text className='min-w-fit'>
-              {`${cut.start} - ${cut.duration}`}
+              {cut.startAndDuration}
             </Text>
           </div>
         </div>
-        <Badge size='sm' className='h-fit my-4'>{cut.jobType}</Badge>
+        <Badge size='sm' className='h-fit my-4 max-w-full overflow-hidden'>{cut.jobType}</Badge>
 
       </div>
       <TabGroup>
