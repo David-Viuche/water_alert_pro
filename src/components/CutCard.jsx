@@ -14,7 +14,7 @@ const CutCard = ({ cut }) => {
               {`${formatDate(cut.date)}`}
             </Text>
             <Text className='min-w-fit'>
-              {`${cut.start} - ${cut.duration}`}
+              {cut.startAndDuration}
             </Text>
           </div>
         </div>
