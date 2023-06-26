@@ -56,8 +56,28 @@ export const getFirstAndLastDates = (array) => {
   return { firstDate, lastDate }
 }
 
-export const filterArrayByKey = (array, key, value) => {
-  return array.filter(item => item[key] === value)
+export const filterArrayByKey = (array, filters) => {
+  return array.filter(item => {
+    for (const key in filters) {
+      if (key === 'date') {
+        const filterDate = new Date(filters[key])
+        const itemDate = item[key]
+
+        if (
+          !filterDate ||
+          !itemDate ||
+          filterDate.getTime() !== itemDate.getTime()
+        ) {
+          return false
+        }
+      } else {
+        if (item[key] !== filters[key]) {
+          return false
+        }
+      }
+    }
+    return true
+  })
 }
 
 export const getUniqueKey = (array, key) => {
