@@ -18,7 +18,7 @@ const CutCard = ({ cut }) => {
             </Text>
           </div>
         </div>
-        <Badge size='sm' className='h-fit my-4'>{cut.jobType}</Badge>
+        <Badge size='sm' className='h-fit my-4 max-w-full overflow-hidden'>{cut.jobType}</Badge>
 
       </div>
       <TabGroup>
