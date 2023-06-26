@@ -59,11 +59,11 @@ const getDateFromText = (dateString) => {
 
       const info = {
         date: getDateFromText(dateJob),
-        location: rowData[0].replace(/\n/g, ''),
-        neighborhoods: rowData[1].replace(/\n/g, ''),
+        location: rowData[0].replace(/\n/g, '').trim(),
+        neighborhoods: rowData[1].replace(/\n/g, '').trim(),
         addresses: rowData[2].split('\n').map((item) => item.trim()).filter(Boolean),
-        startAndDuration: rowData[3].replace(/\n/g, ' ').replace(/\s+/g, ' '),
-        jobType: rowData[4].replace(/\n/g, '')
+        startAndDuration: rowData[3].replace(/\n/g, ' ').replace(/\s+/g, ' ').trim(),
+        jobType: rowData[4].replace(/\n/g, '').trim()
       }
 
       data.push(info)
