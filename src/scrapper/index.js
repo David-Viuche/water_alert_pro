@@ -62,8 +62,7 @@ const getDateFromText = (dateString) => {
         location: rowData[0].replace(/\n/g, ''),
         neighborhoods: rowData[1].replace(/\n/g, ''),
         addresses: rowData[2].split('\n').map((item) => item.trim()).filter(Boolean),
-        start: rowData[3].split('\n')[0].replace(/\n/g, ''),
-        duration: rowData[3].split('\n')[1].replace(/\n/g, ''),
+        startAndDuration: rowData[3].replace(/\n/g, ' ').replace(/\s+/g, ' '),
         jobType: rowData[4].replace(/\n/g, '')
       }
 

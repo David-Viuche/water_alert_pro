@@ -1,1 +1,272 @@
-[{"date":1687842000000,"location":"Puente Aranda","neighborhoods":"Pensilvania","addresses":["De la Carrera 30 a la Carrera 36, entre la Calle 6 a la Calle 13."],"start":"07:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1687842000000,"location":"San Cristóbal","neighborhoods":"San Martín de Loba","addresses":["De la Calle 48 Sur a la Calle 40 Sur, entre la Carrera 2 a la Carrera 2 Este."],"start":"10:00 a.m.","duration":"","jobType":"Instalación de accesorios"},{"date":1687842000000,"location":"Bosa","neighborhoods":"Margaritas","addresses":["Por la Avenida Ciudad de Cali, entre la Calle 49 a la Calle 43 Sur."],"start":"10:00 a.m.","duration":"","jobType":"Cierre a terceros"},{"date":1687842000000,"location":"Kennedy","neighborhoods":"Patio Bonito, Patio Bonito II, Tairona y Campo Hermoso.","addresses":["De la Avenida Calle 6 a la Calle 38 Sur, entre la Avenida Carrera 86 a la Avenida Carrera 89."],"start":"10:00 a.m.","duration":"","jobType":"Mantenimiento preventivo"},{"date":1687842000000,"location":"Suba","neighborhoods":"Suba Cerros, Vereda Suba Naranjos, Altos Dechozica, Suba Urbano.","addresses":["De la Calle 127 a la Calle 157, entre la Transversal 80 a la Carrera 92."],"start":"10:00 a.m.","duration":"","jobType":"Cambio de válvulas"},{"date":1687842000000,"location":"Kennedy","neighborhoods":"Kennedy Central, Carvajal, Giraldilla, Casablanca, Paraiso, Hospital Kennedy.","addresses":["De la Calle 20 Sur a la Calle 39 Sur, entre la Carrera 72 a la Carrera 86."],"start":"10:00 a.m.","duration":"","jobType":"Verificación Macromedidor"},{"date":1687842000000,"location":"Suba","neighborhoods":"Gilmar, Portales del Norte, Sanjosé V Sector, El plan, Britalia Norte, La Sirena.","addresses":["De la Calle153 a la Calle 170, entre la Carrera 55C a la Carrera 72."],"start":"10:00 a.m.","duration":"","jobType":"Cambio de válvulas"},{"date":1687928400000,"location":"Suba","neighborhoods":"Altos de Suba, Suba de Cerros, Casa Blanca de Suba, Escuela de Carabineros, El Plan, Gilmar, Casa Blanca Suba, Vereda Suba Cerros II, Tuna Alta, Barajas Norte.","addresses":["De la Carrera 74 a la Carrera 92, entre la Calle 145 a la Calle 170."],"start":"10:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1687928400000,"location":"Kennedy","neighborhoods":"Lusitania","addresses":["De la Avenida Calle 6 a la Avenida Calle 13, entre la Carrera 68 a la Carrera 68G."],"start":"07:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1687928400000,"location":"Fontibón","neighborhoods":"Ciudad Salitre, Terminal de transportes.","addresses":["De la Carrera 68D a la Carrera 72, entre la Avenida Calle 22 a la Avenida Calle 26."],"start":"07:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1687928400000,"location":"Puente Aranda","neighborhoods":"Comuneros","addresses":["De la Avenida Carrera 30 a la Carrera 36, entre la Calle 3 a la Avenida Calle 6."],"start":"07:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1687928400000,"location":"Fontibón","neighborhoods":"Santa Cecilia","addresses":["De la Avenida Calle 24 a la Avenida Calle 26, entre la Transversal 84A hasta la Avenida Carrera 86."],"start":"07:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1687928400000,"location":"Bosa","neighborhoods":"La Primavera","addresses":["De la Carrera 74H a la Carrera 80J, entre la Diagonal 78A Sur a la Calle 78 Sur."],"start":"10:00 a.m.","duration":"","jobType":"Cierre a terceros"},{"date":1687928400000,"location":"Kennedy","neighborhoods":"Provivienda Occidental, Carvajal y Los Cristales.","addresses":["De la Calle 40 Sur a la Calle 26 Sur, entre la Avenida Carrera 72 a la Carrera 73."],"start":"10:00 a.m.","duration":"","jobType":"Mantenimiento preventivo"},{"date":1687928400000,"location":"Cajicá","neighborhoods":"Municipio de Cajicá","addresses":["Municipio de Cajicá"],"start":"10:00 a.m.","duration":"","jobType":"Verificación Macromedidor"},{"date":1687928400000,"location":"Usme","neighborhoods":"Usme Centro, Rural, Requilina Villa Anita, Brazuelos, Usminia, La Marichuela, Monteblanco, San Juan Bautista, Granada Sur, Serranías, Santa Librada, Salazar Usme, El Virrey","addresses":["De la Calle 71D Sur a la Calle 140 Sur, entre la Carrera 7 a la Carrera 16C."],"start":"10:00 a.m.","duration":"","jobType":"Cambio de válvulas y mantenimiento preventivo"},{"date":1687928400000,"location":"Usme","neighborhoods":"El Pedregal, Duitama, Nuevo San Andrés, La Aurora, Barranquillita.","addresses":["De la Calle 66 Sur a la Calle 81 Bis A Sur, entre la Carrera 7 a la Carrera 16C."],"start":"10:00 a.m.","duration":"","jobType":"Reparación de red acueducto"},{"date":1688014800000,"location":"Suba","neighborhoods":"Ciudad Jardín Norte, Iberia, Atenas, Escuela de Carabineros, El Plan, Gilmar.","addresses":["De la Carrera 72 a la Carrera 76, entre la Calle 130 a la Calle 163."],"start":"10:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1688014800000,"location":" Fontibón","neighborhoods":" Capellanía, Modelia.","addresses":["De la Calle 23 a la Avenida Calle 26, entre la Avenida Carrera 72 a la Transversal 73A."],"start":"07:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1688014800000,"location":"Fontibón","neighborhoods":"Belén, Villa Carmenza","addresses":["De la Calle 17 a la Calle 22, entre la Carrera 106 a la Carrera 116."],"start":"07:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1688014800000,"location":"Kennedy","neighborhoods":"Hipotecho Occidental","addresses":["De la Avenida Calle 3 a la Avenida Calle 26 Sur, entre la Avenida Carrera 68 a la Avenida Carrera 72."],"start":"07:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1688014800000,"location":"Puente Aranda","neighborhoods":"La Camelia, San Eusebio, Torremolinos","addresses":["De la Carrera 51 a la Transversal 53, entre la Calle 2F a la Avenida Calle 26 Sur."],"start":"07:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1688014800000,"location":"Puente Aranda","neighborhoods":"Tibana","addresses":["De la Avenida Calle 3 a la Avenida Calle 6, entre la Carrera 36 a la Carrera 40."],"start":"07:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1688014800000,"location":"Fontibón","neighborhoods":"Granjas de Techo","addresses":["De la Calle 13 a la Calle 22, entre la Carrera 68 a la Carrera 68D."],"start":"07:00 a.m.","duration":"","jobType":"Empates redes acueducto"},{"date":1688014800000,"location":"San Cristóbal","neighborhoods":"El Portal, San Agustín","addresses":["De la Calle 54 Sur a la Calle 48Q Sur, entre la Carrera 3G a la Carrera 5F."],"start":"10:00 a.m.","duration":"","jobType":"Instalación de accesorios"},{"date":1688014800000,"location":"Kennedy","neighborhoods":"La Magdalena, Vereda El Tintal y Nueva Castilla.","addresses":["De la Calle 6D (Costado Norte) a la Calle 16C, entre la Avenida Ciudad de Cali a la Carrera 98."],"start":"10:00 a.m.","duration":"","jobType":"Mantenimiento preventivo"},{"date":1688014800000,"location":"Chía","neighborhoods":"Municipio de Chía","addresses":["Municipio de Chía"],"start":"10:00 a.m.","duration":"","jobType":"Verificación Macromedidor"}]
+[
+  {
+    "date": 1687842000000,
+    "location": "Puente Aranda",
+    "neighborhoods": "Pensilvania",
+    "addresses": [
+      "De la Carrera 30 a la Carrera 36, entre la Calle 6 a la Calle 13."
+    ],
+    "startAndDuration": "07:00 a.m. 28 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1687842000000,
+    "location": "San Cristóbal",
+    "neighborhoods": "San Martín de Loba",
+    "addresses": [
+      "De la Calle 48 Sur a la Calle 40 Sur, entre la Carrera 2 a la Carrera 2 Este."
+    ],
+    "startAndDuration": "10:00 a.m. 24 horas",
+    "jobType": "Instalación de accesorios"
+  },
+  {
+    "date": 1687842000000,
+    "location": "Bosa",
+    "neighborhoods": "Margaritas",
+    "addresses": [
+      "Por la Avenida Ciudad de Cali, entre la Calle 49 a la Calle 43 Sur."
+    ],
+    "startAndDuration": "10:00 a.m. 24 horas",
+    "jobType": "Cierre a terceros"
+  },
+  {
+    "date": 1687842000000,
+    "location": "Kennedy",
+    "neighborhoods": "Patio Bonito, Patio Bonito II, Tairona y Campo Hermoso.",
+    "addresses": [
+      "De la Avenida Calle 6 a la Calle 38 Sur, entre la Avenida Carrera 86 a la Avenida Carrera 89."
+    ],
+    "startAndDuration": "10:00 a.m. 24 horas",
+    "jobType": "Mantenimiento preventivo"
+  },
+  {
+    "date": 1687842000000,
+    "location": "Suba",
+    "neighborhoods": "Suba Cerros, Vereda Suba Naranjos, Altos Dechozica, Suba Urbano.",
+    "addresses": [
+      "De la Calle 127 a la Calle 157, entre la Transversal 80 a la Carrera 92."
+    ],
+    "startAndDuration": "10:00 a.m. 20 horas",
+    "jobType": "Cambio de válvulas"
+  },
+  {
+    "date": 1687842000000,
+    "location": "Kennedy",
+    "neighborhoods": "Kennedy Central, Carvajal, Giraldilla, Casablanca, Paraiso, Hospital Kennedy.",
+    "addresses": [
+      "De la Calle 20 Sur a la Calle 39 Sur, entre la Carrera 72 a la Carrera 86."
+    ],
+    "startAndDuration": "10:00 a.m. 4 horas",
+    "jobType": "Verificación Macromedidor"
+  },
+  {
+    "date": 1687842000000,
+    "location": "Suba",
+    "neighborhoods": "Gilmar, Portales del Norte, Sanjosé V Sector, El plan, Britalia Norte, La Sirena.",
+    "addresses": [
+      "De la Calle153 a la Calle 170, entre la Carrera 55C a la Carrera 72."
+    ],
+    "startAndDuration": "10:00 a.m. 12 horas",
+    "jobType": "Cambio de válvulas"
+  },
+  {
+    "date": 1687928400000,
+    "location": "Suba",
+    "neighborhoods": "Altos de Suba, Suba de Cerros, Casa Blanca de Suba, Escuela de Carabineros, El Plan, Gilmar, Casa Blanca Suba, Vereda Suba Cerros II, Tuna Alta, Barajas Norte.",
+    "addresses": [
+      "De la Carrera 74 a la Carrera 92, entre la Calle 145 a la Calle 170."
+    ],
+    "startAndDuration": "10:00 a.m. 24 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1687928400000,
+    "location": "Kennedy",
+    "neighborhoods": "Lusitania",
+    "addresses": [
+      "De la Avenida Calle 6 a la Avenida Calle 13, entre la Carrera 68 a la Carrera 68G."
+    ],
+    "startAndDuration": "07:00 a.m. 28 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1687928400000,
+    "location": "Fontibón",
+    "neighborhoods": "Ciudad Salitre, Terminal de transportes.",
+    "addresses": [
+      "De la Carrera 68D a la Carrera 72, entre la Avenida Calle 22 a la Avenida Calle 26."
+    ],
+    "startAndDuration": "07:00 a.m. 28 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1687928400000,
+    "location": "Puente Aranda",
+    "neighborhoods": "Comuneros",
+    "addresses": [
+      "De la Avenida Carrera 30 a la Carrera 36, entre la Calle 3 a la Avenida Calle 6."
+    ],
+    "startAndDuration": "07:00 a.m. 28 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1687928400000,
+    "location": "Fontibón",
+    "neighborhoods": "Santa Cecilia",
+    "addresses": [
+      "De la Avenida Calle 24 a la Avenida Calle 26, entre la Transversal 84A hasta la Avenida Carrera 86."
+    ],
+    "startAndDuration": "07:00 a.m. 28 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1687928400000,
+    "location": "Bosa",
+    "neighborhoods": "La Primavera",
+    "addresses": [
+      "De la Carrera 74H a la Carrera 80J, entre la Diagonal 78A Sur a la Calle 78 Sur."
+    ],
+    "startAndDuration": "10:00 a.m. 24 horas",
+    "jobType": "Cierre a terceros"
+  },
+  {
+    "date": 1687928400000,
+    "location": "Kennedy",
+    "neighborhoods": "Provivienda Occidental, Carvajal y Los Cristales.",
+    "addresses": [
+      "De la Calle 40 Sur a la Calle 26 Sur, entre la Avenida Carrera 72 a la Carrera 73."
+    ],
+    "startAndDuration": "10:00 a.m. 24 horas",
+    "jobType": "Mantenimiento preventivo"
+  },
+  {
+    "date": 1687928400000,
+    "location": "Cajicá",
+    "neighborhoods": "Municipio de Cajicá",
+    "addresses": [
+      "Municipio de Cajicá"
+    ],
+    "startAndDuration": "10:00 a.m. 4 horas",
+    "jobType": "Verificación Macromedidor"
+  },
+  {
+    "date": 1687928400000,
+    "location": "Usme",
+    "neighborhoods": "Usme Centro, Rural, Requilina Villa Anita, Brazuelos, Usminia, La Marichuela, Monteblanco, San Juan Bautista, Granada Sur, Serranías, Santa Librada, Salazar Usme, El Virrey",
+    "addresses": [
+      "De la Calle 71D Sur a la Calle 140 Sur, entre la Carrera 7 a la Carrera 16C."
+    ],
+    "startAndDuration": "10:00 a.m. 12 horas",
+    "jobType": "Cambio de válvulas y mantenimiento preventivo"
+  },
+  {
+    "date": 1687928400000,
+    "location": "Usme",
+    "neighborhoods": "El Pedregal, Duitama, Nuevo San Andrés, La Aurora, Barranquillita.",
+    "addresses": [
+      "De la Calle 66 Sur a la Calle 81 Bis A Sur, entre la Carrera 7 a la Carrera 16C."
+    ],
+    "startAndDuration": "10:00 a.m. 24 horas",
+    "jobType": "Reparación de red acueducto"
+  },
+  {
+    "date": 1688014800000,
+    "location": "Suba",
+    "neighborhoods": "Ciudad Jardín Norte, Iberia, Atenas, Escuela de Carabineros, El Plan, Gilmar.",
+    "addresses": [
+      "De la Carrera 72 a la Carrera 76, entre la Calle 130 a la Calle 163."
+    ],
+    "startAndDuration": "10:00 a.m. 24 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1688014800000,
+    "location": " Fontibón",
+    "neighborhoods": " Capellanía, Modelia.",
+    "addresses": [
+      "De la Calle 23 a la Avenida Calle 26, entre la Avenida Carrera 72 a la Transversal 73A."
+    ],
+    "startAndDuration": "07:00 a.m. 28 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1688014800000,
+    "location": "Fontibón",
+    "neighborhoods": "Belén, Villa Carmenza",
+    "addresses": [
+      "De la Calle 17 a la Calle 22, entre la Carrera 106 a la Carrera 116."
+    ],
+    "startAndDuration": "07:00 a.m. 28 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1688014800000,
+    "location": "Kennedy",
+    "neighborhoods": "Hipotecho Occidental",
+    "addresses": [
+      "De la Avenida Calle 3 a la Avenida Calle 26 Sur, entre la Avenida Carrera 68 a la Avenida Carrera 72."
+    ],
+    "startAndDuration": "07:00 a.m. 28 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1688014800000,
+    "location": "Puente Aranda",
+    "neighborhoods": "La Camelia, San Eusebio, Torremolinos",
+    "addresses": [
+      "De la Carrera 51 a la Transversal 53, entre la Calle 2F a la Avenida Calle 26 Sur."
+    ],
+    "startAndDuration": "07:00 a.m. 28 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1688014800000,
+    "location": "Puente Aranda",
+    "neighborhoods": "Tibana",
+    "addresses": [
+      "De la Avenida Calle 3 a la Avenida Calle 6, entre la Carrera 36 a la Carrera 40."
+    ],
+    "startAndDuration": "07:00 a.m. 28 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1688014800000,
+    "location": "Fontibón",
+    "neighborhoods": "Granjas de Techo",
+    "addresses": [
+      "De la Calle 13 a la Calle 22, entre la Carrera 68 a la Carrera 68D."
+    ],
+    "startAndDuration": "07:00 a.m. 28 horas",
+    "jobType": "Empates redes acueducto"
+  },
+  {
+    "date": 1688014800000,
+    "location": "San Cristóbal",
+    "neighborhoods": "El Portal, San Agustín",
+    "addresses": [
+      "De la Calle 54 Sur a la Calle 48Q Sur, entre la Carrera 3G a la Carrera 5F."
+    ],
+    "startAndDuration": "10:00 a.m. 24 horas",
+    "jobType": "Instalación de accesorios"
+  },
+  {
+    "date": 1688014800000,
+    "location": "Kennedy",
+    "neighborhoods": "La Magdalena, Vereda El Tintal y Nueva Castilla.",
+    "addresses": [
+      "De la Calle 6D (Costado Norte) a la Calle 16C, entre la Avenida Ciudad de Cali a la Carrera 98."
+    ],
+    "startAndDuration": "10:00 a.m. 24 horas",
+    "jobType": "Mantenimiento preventivo"
+  },
+  {
+    "date": 1688014800000,
+    "location": "Chía",
+    "neighborhoods": "Municipio de Chía",
+    "addresses": [
+      "Municipio de Chía"
+    ],
+    "startAndDuration": "10:00 a.m. 4 horas",
+    "jobType": "Verificación Macromedidor"
+  }
+]
