@@ -1,7 +1,8 @@
-import { Button, Card, Metric, Select, SelectItem, Title } from '@tremor/react'
+import { Card, Metric } from '@tremor/react'
 import CutList from './CutList'
-import { filterArrayByKey, formatDate, getFirstAndLastDates, getUniqueKey } from '@/utils/utils'
+import { filterArrayByKey, getFirstAndLastDates } from '@/utils/utils'
 import { useEffect, useState } from 'react'
+import Filter from './Filter'
 
 const CutsFiltered = ({ cuts }) => {
   const getDates = getFirstAndLastDates(cuts)
@@ -33,52 +34,10 @@ const CutsFiltered = ({ cuts }) => {
       <Metric className='text-center'>
         {`Últimos cortes de agua publicados en Bogotá entre ${getDates?.firstDate} - ${getDates?.lastDate}`}
       </Metric>
-      <Card>
-        <div className='flex items-center justify-between mb-4'>
-          <Title>
-            Filtrar por localidad
-          </Title>
-          <Button size='xs' onClick={() => deleteFilters('location')}>Borrar</Button>
-        </div>
-        <Select value={selectedValue.location || null} onChange={(val) => filterHandle(val, 'location')}>
-
-          {
-            getUniqueKey(cuts, 'location').map((key) => (
-              <SelectItem key={key} value={key}>{key}</SelectItem>
-            ))
-          }
-
-        </Select>
-        <div className='flex items-center justify-between my-4'>
-          <Title>
-            Filtrar por tipo trabajo
-          </Title>
-          <Button size='xs' onClick={() => deleteFilters('jobType')}>Borrar</Button>
-        </div>
-        <Select value={selectedValue.jobType || null} onChange={(val) => filterHandle(val, 'jobType')}>
-
-          {
-            getUniqueKey(cuts, 'jobType').map((key) => (
-              <SelectItem key={key} value={key}>{key}</SelectItem>
-            ))
-          }
-
-        </Select>
-        <div className='flex items-center justify-between my-4'>
-          <Title>
-            Filtrar por día
-          </Title>
-          <Button size='xs' onClick={() => deleteFilters('date')}>Borrar</Button>
-        </div>
-        <Select value={selectedValue.date || null} onChange={(val) => filterHandle(val, 'date')}>
-          {
-            getUniqueKey(cuts, 'date').map((key) => (
-              <SelectItem key={key} value={key}>{formatDate(new Date(key))}</SelectItem>
-            ))
-          }
-
-        </Select>
-
+      <Card className='flex flex-col sm:flex-row'>
+        <Filter title='Filtrar por localidad' keyFilter='location' selectedValue={selectedValue} cuts={cuts} filterHandle={filterHandle} deleteFilters={deleteFilters} />
+        <Filter title='Filtrar por tipo trabajo' keyFilter='jobType' selectedValue={selectedValue} cuts={cuts} filterHandle={filterHandle} deleteFilters={deleteFilters} />
+        <Filter title='Filtrar por día' keyFilter='date' selectedValue={selectedValue} cuts={cuts} filterHandle={filterHandle} deleteFilters={deleteFilters} />
       </Card>
     </CutList >
   )
