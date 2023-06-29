@@ -3,7 +3,7 @@ import { Accordion, AccordionBody, AccordionHeader } from '@tremor/react'
 const Details = ({ header, children }) => {
   return (
     <Accordion className='h-fit'>
-      <AccordionHeader>{header}</AccordionHeader>
+      <AccordionHeader className='text-start'>{header}</AccordionHeader>
       <AccordionBody>
         {children}
       </AccordionBody>

@@ -2,6 +2,7 @@
 import Banner from '@/components/Banner'
 import CutsFiltered from '@/components/CutsFiltered'
 import DataChart from '@/components/DataChart'
+import Footer from '@/components/Footer'
 import { Header } from '@/components/Header'
 import Questions from '@/components/Questions'
 import { Text } from '@tremor/react'
@@ -52,6 +53,7 @@ export default function Home() {
         )
       }
       <Questions />
+      <Footer />
     </main>
   )
 }
