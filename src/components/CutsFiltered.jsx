@@ -31,7 +31,7 @@ const CutsFiltered = ({ cuts }) => {
 
   return (
     <CutList cuts={cutsFiltered} nodata={`No hay cortes de agua programados entre ${getDates?.firstDate} - ${getDates?.lastDate} que cumplan los criterios de filtrado`} className='min-h-screen'>
-      <Metric className='text-center'>
+      <Metric className='text-center' id='cortes'>
         {`Últimos cortes de agua publicados en Bogotá entre ${getDates?.firstDate} - ${getDates?.lastDate}`}
       </Metric>
       <Card className='flex flex-col sm:flex-row'>

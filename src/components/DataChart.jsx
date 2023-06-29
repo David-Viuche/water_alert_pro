@@ -4,7 +4,7 @@ import { AreaChart, BarChart, Card, Metric, Title } from '@tremor/react'
 const DataChart = ({ cuts }) => {
   return (
     <section className='p-8 flex w-full items-center justify-evenly flex-col gap-8'>
-      <Metric className='text-center'>
+      <Metric className='text-center' id='estadisticas'>
         Gráficos de cortes de agua en Bogotá
       </Metric>
       <Card >
