@@ -1,11 +1,9 @@
 'use client'
 import Banner from '@/components/Banner'
 import CutsFiltered from '@/components/CutsFiltered'
-import CutsToday from '@/components/CutsToday'
+import DataChart from '@/components/DataChart'
 import { Header } from '@/components/Header'
-import { getTodayCuts } from '@/utils/utils'
 import { Text } from '@tremor/react'
-
 import { useEffect, useState } from 'react'
 
 export default function Home() {
@@ -46,8 +44,9 @@ export default function Home() {
       {
         !isLoading && (
           <>
-            <CutsToday cuts={getTodayCuts(cuts)} />
+            {/* <CutsToday cuts={getTodayCuts(cuts)} /> */}
             <CutsFiltered cuts={cuts} />
+            <DataChart cuts={cuts} />
           </>
         )}
     </main>
