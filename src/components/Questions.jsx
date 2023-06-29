@@ -3,7 +3,7 @@ import Details from './Details'
 
 const Questions = () => {
   return (
-    <section className='p-8 flex w-full items-center justify-evenly flex-col gap-8' id='faq'>
+    <section className='p-8 flex w-full items-center justify-evenly flex-col gap-8 my-14' id='faq'>
       <Metric className='text-center'>
         Preguntas frecuentes
       </Metric>
