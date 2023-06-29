@@ -93,3 +93,72 @@ export const getUniqueKey = (array, key) => {
 
   return Array.from(uniqueKey)
 }
+
+export const getDistributionByLocation = (data) => {
+  const res = []
+
+  data.forEach((cut) => {
+    const locate = cut.location
+    const index = res.findIndex((obj) => obj.Localidad === locate)
+
+    if (index !== -1) {
+      res[index].Cantidad++
+    } else {
+      res.push({ Localidad: locate, Cantidad: 1 })
+    }
+  })
+
+  return res
+}
+
+export const getDistributionBystartAndDuration = (data) => {
+  const res = []
+
+  data.forEach((cut) => {
+    const startDuration = cut.startAndDuration
+    const index = res.findIndex((obj) => obj.Duracion === startDuration)
+
+    if (index !== -1) {
+      res[index].Cantidad++
+    } else {
+      res.push({ Duracion: startDuration, Cantidad: 1 })
+    }
+  })
+
+  return res
+}
+
+export const getDistributionByjobType = (data) => {
+  const res = []
+
+  data.forEach((cut) => {
+    const jobType = cut.jobType
+    const index = res.findIndex((obj) => obj.Tipo === jobType)
+
+    if (index !== -1) {
+      res[index].Cantidad++
+    } else {
+      res.push({ Tipo: jobType, Cantidad: 1 })
+    }
+  })
+
+  return res
+}
+
+export const getDistributionByDate = (data) => {
+  const res = []
+
+  data.forEach((cut) => {
+    const date = cut.date
+
+    const index = res.findIndex((obj) => obj.Fecha === formatDate(date))
+
+    if (index !== -1) {
+      res[index].Cantidad++
+    } else {
+      res.push({ Fecha: formatDate(date), Cantidad: 1 })
+    }
+  })
+
+  return res
+}

@@ -30,14 +30,14 @@ const CutsFiltered = ({ cuts }) => {
   }, [cuts, selectedValue])
 
   return (
-    <CutList cuts={cutsFiltered} nodata={`No hay cortes de agua programados entre ${getDates?.firstDate} - ${getDates?.lastDate}`} className='min-h-screen'>
-      <Metric className='text-center'>
+    <CutList cuts={cutsFiltered} nodata={`No hay cortes de agua programados entre ${getDates?.firstDate} - ${getDates?.lastDate} que cumplan los criterios de filtrado`} className='min-h-screen'>
+      <Metric className='text-center my-14' id='cortes'>
         {`Últimos cortes de agua publicados en Bogotá entre ${getDates?.firstDate} - ${getDates?.lastDate}`}
       </Metric>
       <Card className='flex flex-col sm:flex-row'>
+        <Filter title='Filtrar por día' keyFilter='date' selectedValue={selectedValue} cuts={cuts} filterHandle={filterHandle} deleteFilters={deleteFilters} />
         <Filter title='Filtrar por localidad' keyFilter='location' selectedValue={selectedValue} cuts={cuts} filterHandle={filterHandle} deleteFilters={deleteFilters} />
         <Filter title='Filtrar por tipo trabajo' keyFilter='jobType' selectedValue={selectedValue} cuts={cuts} filterHandle={filterHandle} deleteFilters={deleteFilters} />
-        <Filter title='Filtrar por día' keyFilter='date' selectedValue={selectedValue} cuts={cuts} filterHandle={filterHandle} deleteFilters={deleteFilters} />
       </Card>
     </CutList >
   )

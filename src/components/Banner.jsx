@@ -2,7 +2,7 @@ import { Card, Divider, Metric, Text } from '@tremor/react'
 
 const Banner = () => {
   return (
-    <section className='p-8 flex w-full items-center justify-between flex-col sm:flex-row'>
+    <section className='p-8 flex w-full items-center justify-between flex-col sm:flex-row mt-20 sm:mt-36 my-14'>
       <img src='/alert_ils.svg' alt='ilustracion persona con un celular y un mensaje de alerta' className='w-1/2 max-w-lg' />
       <div className='max-w-md text-center gap-8 flex flex-col'>
         <Metric>

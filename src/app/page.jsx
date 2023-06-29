@@ -1,11 +1,11 @@
 'use client'
 import Banner from '@/components/Banner'
 import CutsFiltered from '@/components/CutsFiltered'
-import CutsToday from '@/components/CutsToday'
+import DataChart from '@/components/DataChart'
+import Footer from '@/components/Footer'
 import { Header } from '@/components/Header'
-import { getTodayCuts } from '@/utils/utils'
+import Questions from '@/components/Questions'
 import { Text } from '@tremor/react'
-
 import { useEffect, useState } from 'react'
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className='max-w-7xl min-h-screen mx-auto '>
+    <main className='max-w-7xl min-h-screen mx-auto relative'>
       <Header />
       <Banner />
       {isLoading && (
@@ -46,10 +46,14 @@ export default function Home() {
       {
         !isLoading && (
           <>
-            <CutsToday cuts={getTodayCuts(cuts)} />
+            {/* <CutsToday cuts={getTodayCuts(cuts)} /> */}
             <CutsFiltered cuts={cuts} />
+            <DataChart cuts={cuts} />
           </>
-        )}
+        )
+      }
+      <Questions />
+      <Footer />
     </main>
   )
 }
