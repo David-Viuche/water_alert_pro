@@ -20,13 +20,13 @@ const DataChart = ({ cuts }) => {
           showLegend={false}
         />
       </Card>
-      <div className='flex flex-col sm:flex-row justify-between w-full gap-8'>
+      <div className='w-full gap-8 grid grid-cols-1 sm:grid-cols-3'>
         <Card className='max-w-xl'>
           <Title>
             Cantidad cortes de agua por hora y duración
           </Title>
           <BarChart
-            className='mt-6'
+            className='mt-6 w-full'
             data={getDistributionBystartAndDuration(cuts)}
             index='Duracion'
             colors={['amber']}
@@ -40,7 +40,7 @@ const DataChart = ({ cuts }) => {
             Cantidad cortes de agua por tipo trabajo
           </Title>
           <BarChart
-            className='mt-6'
+            className='mt-6 w-full'
             data={getDistributionByjobType(cuts)}
             index='Tipo'
             categories={['Cantidad']}
@@ -54,7 +54,7 @@ const DataChart = ({ cuts }) => {
             Cantidad cortes de agua por fecha
           </Title>
           <BarChart
-            className='mt-6'
+            className='mt-6 w-full'
             data={getDistributionByDate(cuts)}
             index='Fecha'
             categories={['Cantidad']}
