@@ -31,9 +31,9 @@ export const Header = () => {
       <nav className={`bg-white border sm:border-0 absolute p-5 top-14 inset-x-0 transition transform origin-top-right ${(!isOpen) && 'hidden'} sm:block opacity-95 sm:relative sm:top-0 z-50`}>
         <ul className='flex flex-col justify-center items-center gap-5 text-center w-full sm:flex-row sm:h-14'>
           <HeaderLink onClick={handleOnclick} href='/' ariaLabel='redirección a la página principal'>Inicio</HeaderLink>
-          <HeaderLink onClick={handleOnclick} href='#faq' ariaLabel='redirección a la lista de Preguntas frecuentes'>Preguntas frecuentes</HeaderLink>
           <HeaderLink onClick={handleOnclick} href='#cortes' ariaLabel='redirección a la lista de Cortes de agua'>Cortes de agua</HeaderLink>
           <HeaderLink onClick={handleOnclick} href='#estadisticas' ariaLabel='redirección a la lista de Estadísticas'>Estadísticas</HeaderLink>
+          <HeaderLink onClick={handleOnclick} href='#faq' ariaLabel='redirección a la lista de Preguntas frecuentes'>Preguntas frecuentes</HeaderLink>
         </ul>
       </nav>
     </header>
