@@ -34,7 +34,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className='max-w-7xl min-h-screen mx-auto '>
+    <main className='max-w-7xl min-h-screen mx-auto relative'>
       <Header />
       <Banner />
       {isLoading && (
