@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import { Header } from '@/components/Header'
 import Questions from '@/components/Questions'
 import { Text } from '@tremor/react'
+import Script from 'next/script'
 import { useEffect, useState } from 'react'
 
 export default function Home() {
@@ -35,6 +36,18 @@ export default function Home() {
 
   return (
     <main className='max-w-7xl min-h-screen mx-auto relative'>
+
+      <Script id='my-script'
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LQS1D6MNVX');
+            `
+        }}
+      />
+      <Script async src='https://www.googletagmanager.com/gtag/js?id=G-LQS1D6MNVX'></Script>
       <Header />
       <Banner />
       {isLoading && (
