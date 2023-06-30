@@ -18,13 +18,13 @@ const Banner = () => {
             </li> */}
             <li>
               <Text>
-                Mantente al tanto de los cortes programados, emergencias y reparaciones, asegurando que nunca te sorprendas con la falta de agua.
+                Nuestra plataforma te brinda la tranquilidad de estar informado en todo momento.
               </Text>
               <Divider />
             </li>
             <li>
               <Text>
-                Nuestra plataforma te brinda la tranquilidad de estar informado en todo momento.
+                Mantente al tanto de los cortes programados, emergencias y reparaciones, asegurando que la falta de agua nunca te sorprenda.
               </Text>
             </li>
           </ul>
