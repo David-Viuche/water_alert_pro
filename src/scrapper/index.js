@@ -30,7 +30,7 @@ const getDateFromText = (dateString) => {
       userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36'
     })
 
-    await page.goto('https://www.acueducto.com.co/wps/portal/EAB2/Home/atencion-al-usuario/programacion_cortes')
+    await page.goto('https://www.acueducto.com.co/wpsportal/wps/portal/EAB2/Home/atencion-al-usuario/programacion_cortes')
 
     // await page.goto('http://localhost:8080/Programaci%C3%B3n%20de%20cortes.html')
 
