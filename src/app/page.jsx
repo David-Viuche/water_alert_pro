@@ -5,6 +5,7 @@ import DataChart from '@/components/DataChart'
 import Footer from '@/components/Footer'
 import { Header } from '@/components/Header'
 import Questions from '@/components/Questions'
+import { formatDateUTC } from '@/utils/utils'
 import { Text } from '@tremor/react'
 import Script from 'next/script'
 import { useEffect, useState } from 'react'
@@ -21,7 +22,7 @@ export default function Home() {
         if (!data.error) {
           setCuts(data.data.map(el => ({
             ...el,
-            date: new Date(el.date)
+            date: formatDateUTC(el.date) || new Date(el.date)
           })))
         }
       } catch (error) {

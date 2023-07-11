@@ -162,3 +162,8 @@ export const getDistributionByDate = (data) => {
 
   return res
 }
+
+export const formatDateUTC = (date) => {
+  const dateForm = new Date(new Date(date).getUTCFullYear(), new Date(date).getUTCMonth(), new Date(date).getUTCDate())
+  return dateForm
+}
