@@ -10,7 +10,7 @@ const Questions = () => {
 
       <AccordionList className='w-full gap-8 p-0 sm:p-8 grid sm:grid-cols-2'>
         <Details header='¿De dónde salen los datos?'>
-          Actualmente, los datos provienen de la página oficial del Acueducto de Bogotá en donde se encuentra esta información pública y se puede consultar en el siguiente link <a className='text-cyan-400 visited:text-cyan-600' target='_blank' href='https://www.acueducto.com.co/wps/portal/EAB2/Home/atencion-al-usuario/programacion_cortes'>https://www.acueducto.com.co/wps/portal/EAB2/Home/atencion-al-usuario/programacion_cortes</a>
+          Actualmente, los datos provienen de la página oficial del Acueducto de Bogotá en donde se encuentra esta información pública y se puede consultar en el siguiente link <a className='text-cyan-400 visited:text-cyan-600' target='_blank' href='https://www.acueducto.com.co/wpsportal/wps/portal/EAB2/Home/atencion-al-usuario/programacion_cortes'>https://www.acueducto.com.co/wpsportal/wps/portal/EAB2/Home/atencion-al-usuario/programacion_cortes</a>
         </Details>
         <Details header='¿Son fiables los datos?'>
           Los datos son obtenidos de la página oficial del Acueducto de Bogotá

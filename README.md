@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Aquaaviso App
 
-First, run the development server:
+Esta aplicación permite a los usuarios ver los cortes de agua actuales en la ciudad de Bogotá. Está desarrollada utilizando el framework Next.js, que combina React.js con capacidades de servidor para ofrecer una experiencia de usuario rápida y eficiente.
+
+Características
+- Visualización de los cortes de agua actuales en Bogotá.
+- Información detallada sobre cada corte, incluyendo ubicación, duración estimada y razón.
+- Búsqueda de cortes de agua por fecha, localidad, tipo trabajo.
+- Gráficos informativos 
+- Se mantendrá actualizada la información cada semana con las publicaciones oficiales del Acueducto de Bogotá
+
+## Capturas de Pantalla
+
+![image](https://github.com/David-Viuche/water_alert_pro/assets/39018284/7c4981b5-650e-4533-bb0e-2523a52afc8d)
+
+![image](https://github.com/David-Viuche/water_alert_pro/assets/39018284/75c204b4-7638-40db-a122-2d0f85eb042e)
+
+![image](https://github.com/David-Viuche/water_alert_pro/assets/39018284/279ed8ee-1afd-40f6-889b-d3517d74590d)
+
+Instalación
+
+1. Clona este repositorio en tu máquina local.
+
+```bash
+git clone https://github.com/David-Viuche/water_alert_pro.git
+```
+2. Navega hasta el directorio del proyecto.
+
+```bash
+cd water_alert_pro
+```
+3. Instala las dependencias del proyecto.
+
+```bash
+npm install
+```
+
+Inicia la aplicación en modo de desarrollo.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre tu navegador y accede a http://localhost:3000 para ver la aplicación en funcionamiento.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+¡Disfruta de la aplicación para ver los cortes de agua actuales en Bogotá!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
