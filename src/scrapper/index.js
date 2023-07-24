@@ -36,7 +36,7 @@ const getDateFromText = (dateString) => {
 
     const tables = await page.$$('.table')
 
-    const lastTable = tables[tables.length - 1]
+    const lastTable = tables[tables.length - 2]
 
     const rows = await lastTable.$$('tr')
 
