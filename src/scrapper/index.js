@@ -36,7 +36,7 @@ const getDateFromText = (dateString) => {
 
     const tables = await page.$$('.table')
 
-    const lastTable = tables[tables.length - 2]
+    const lastTable = tables[1]
 
     const rows = await lastTable.$$('tr')
 
@@ -70,6 +70,10 @@ const getDateFromText = (dateString) => {
     }
 
     await browser.close()
+
+    if (data.length === 0) {
+      throw new Error('Error scraper void :c')
+    }
   } catch (error) {
     console.error({ msg: 'Error Scrapper', error })
   }
